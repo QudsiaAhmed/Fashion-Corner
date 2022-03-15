@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google fonts(Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--color-white);
+        }
+
+        nav {
+            background-color: transparent;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 11;
+        }
+
+        .nav_container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav_menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .nav_menu a {
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav_menu a:hover {
+            color: var(--color-bg2);
+        }
+
+        .search {
+            width: 500px;
+            display: flex;
+        }
+
+        .search-box {
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            align-items: center;
+            border: 1px solid #d1d1d1;
+            text-transform: capitalize;
+            background: none;
+            color: #a9a9a9;
+            outline: none;
+            border-radius: 8px;
+        }
+
+        .search-btn {
+            width: 20%;
+            height: 40px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            /* background: black; */
+            /* color: ; */
+            text-transform: capitalize;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+
+        .main {
+            padding-top: 10rem;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .img {
+            padding-top: 3rem;
+            text-align: center;
+        }
+        .main-1{
+            text-align: center;
+            padding-top: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="o">
+        <nav>
+            <div class="f"></div>
+            <div class="container nav_container">
+                <a href="index.html">
+                    <h4>Fashionn Corner</h4>
+                </a>
+                <ul class="nav_menu">
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="search brands, products">
+                        <button class="search-btn">Search</button>
+                    </div>
+                    <!-- <button id="open-menu-btn"><i class="uil uil-users-alt"></i></button>
+              <button id="close-menu-btn"><i class="uil uil-shopping-cart"></i></button> -->
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="index.html">Categories</a></li>
+                    <li><a href="Brands.html">Brands</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main">
+            <h1>Welcome to Fashion Corner</h1>
+        </div>
+        <div class="img">
+            <img src="./images/Fas.jpeg">
+        </div>
+        <div class="main-1">
+            <h1>Categories</h1>
+        </div>
+    </div>
+</body>
+
+</html>
